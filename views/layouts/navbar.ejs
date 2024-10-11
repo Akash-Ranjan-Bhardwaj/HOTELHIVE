@@ -1,0 +1,141 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar shadow-sm">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/hotels">
+            <img src="https://www.reshot.com/preview-assets/icons/HRUBMA7W9P/hotel-HRUBMA7W9P.svg" alt="HotelHive Logo" class="d-inline-block align-top custom-logo">
+            <span class="ms-2" style="font-size: 2rem; font-weight: bold; color: #0056b3;">HotelHive</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/hotels">All Hotels</a>
+                </li>
+
+                <% if (!user) { %> <!-- If user is NOT logged in -->
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary me-3 rounded-pill" href="/auth/users/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary me-3 rounded-pill" href="/auth/users/signup">Signup</a>
+                    </li>
+                <% } else { %> <!-- If user IS logged in -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/hotels/new">Add Hotel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-danger rounded-pill" href="/auth/users/logout">Logout</a>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    .custom-navbar {
+        background-color: #f8f9fa; /* Custom background color */
+        border-bottom: 2px solid #0056b3; /* Add a bottom border */
+        transition: background-color 0.3s; /* Smooth transition for background */
+    }
+
+    .custom-navbar:hover {
+        background-color: #e2e6ea; /* Change background on hover */
+    }
+
+    .navbar-brand .custom-logo {
+        width: 40px; /* Adjust logo size */
+        height: 40px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #0056b3; /* Custom link color */
+        font-size: 1.2rem; /* Increase font size */
+        transition: color 0.3s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #004085; /* Darker color on hover */
+        text-decoration: underline; /* Underline effect */
+    }
+
+    .btn-outline-primary,
+    .btn-primary,
+    .btn-danger {
+        transition: all 0.3s;
+    }
+
+    .btn-outline-primary {
+        border-radius: 20px; /* Rounded outline button */
+        border: 2px solid #007bff; /* Custom border */
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #007bff; /* Change background on hover */
+        color: white; /* Change text color on hover */
+    }
+
+    .btn-primary {
+        background-color: #007bff; /* Custom background color */
+        border-color: #007bff; /* Custom border color */
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3; /* Darker background on hover */
+        border-color: #004085; /* Darker border on hover */
+    }
+
+    .btn-danger {
+        background-color: #dc3545; /* Custom background color for logout */
+        border-color: #dc3545; /* Custom border color for logout */
+    }
+
+    .btn-danger:hover {
+        background-color: #c82333; /* Darker background on hover */
+        border-color: #bd2130; /* Darker border on hover */
+    }
+
+    .custom-navbar.shadow-sm {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Add shadow */
+    }
+</style>

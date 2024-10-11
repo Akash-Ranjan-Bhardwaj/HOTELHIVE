@@ -1,0 +1,48 @@
+.card-img-top {
+    height: 300px; 
+    object-fit: cover; 
+}
+
+.custom-logo{
+    height: 65px;
+}
+
+.hotelshow{
+    height: 200px;
+}
+
+/* Custom CSS for card styling */
+.card {
+    border-radius: 15px; /* Rounded corners for cards */
+}
+.card-title {
+    font-size: 1.25rem; /* Increase font size for title */
+}
+.card-text {
+    font-size: 0.95rem; /* Smaller font size for text */
+}
+.btn-primary {
+    background-color: #007bff; /* Custom blue color */
+    border-color: #007bff; /* Match border color */
+}
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Match border color on hover */
+}
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add subtle glow on focus */
+    border-color: #007bff; /* Ensure focus matches primary color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darken button on hover */
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    //transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Elevate card on hover */
+}
